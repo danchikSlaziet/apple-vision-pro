@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Optional parameters
     direction: 'horizontal',
     slidesPerView: 'auto',
-    spaceBetween: '20'
+    spaceBetween: '20',
+    speed: '500'
   });
 })
