@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apple Vision Pro</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./vendor/swiper.css">
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -19,7 +20,7 @@
         <div class="menu-button"></div>
       </label>
     </div>
-    <h1 id="header-title" class="header__title">
+    <h1 data-aos="fade-left" id="header-title" class="header__title">
       Revolutionary vision with<br>Apple Vision Pro.
     </h1>
     <img class="header__decorate header__decorate_left" src="./images/capella-left.png" alt="">
@@ -33,10 +34,10 @@
   </div>
   <main class="main">
     <section id="products" class="products">
-      <h2 class="products__title">
+      <h2 data-aos="fade-right" class="products__title">
         Enter New Reality
       </h2>
-      <div class="products__swiper">
+      <div data-aos="fade-up" class="products__swiper">
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -70,7 +71,7 @@
           </div>
         </div>
       </div>
-      <div class="products__cards">
+      <div data-aos="fade-left" class="products__cards">
         <div class="products__card">
           <div class="products__card-hover">
             <p class="products__card-hover-text">Selling text</p>
@@ -100,11 +101,42 @@
           <img class="products__card-img" src="./images/card4.png" alt="">
         </div>
       </div>
-      <p class="products__text">
+      <p data-aos="fade-right" class="products__text">
         Information about the product/company, etc. <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium pariatur quae nam eius atque odio cum ipsa repellendus amet quas obcaecati, eligendi perspiciatis quos libero animi. Omnis, cumque nihil.
       </p>
     </section>
-    <section id="contacts" class="contacts">
+    <section class="price">
+      <div data-aos="fade-up" class="price__content">
+        <div class="price__card">
+          <img class="price__img" src="./images/price-img.png" alt="">
+          <h3 class="price__title">
+            Apple Vision Pro <br> 1TB
+          </h3>
+          <p class="price__subtitle">
+            100 RUB
+          </p>
+        </div>
+        <div class="price__card">
+          <img class="price__img" src="./images/price-img.png" alt="">
+          <h3 class="price__title">
+            Apple Vision Pro <br> 512GB
+          </h3>
+          <p class="price__subtitle">
+            75 RUB
+          </p>
+        </div>
+        <div class="price__card">
+          <img class="price__img" src="./images/price-img.png" alt="">
+          <h3 class="price__title">
+            Apple Vision Pro <br> 256GB
+          </h3>
+          <p class="price__subtitle">
+            50 RUB
+          </p>
+        </div>
+      </div>
+    </section>
+    <section data-aos="fade-up" id="contacts" class="contacts">
       <p class="contacts__title">
         Get Yours
       </p>
@@ -127,6 +159,10 @@
       </div>
     </section>
   </main>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="./vendor/swiper.js"></script>
   <script src="./main.js"></script>
 </body>

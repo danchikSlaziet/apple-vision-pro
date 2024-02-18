@@ -1,14 +1,21 @@
 @font-face{
-  font-family: "Martian";
-  src: url("./fonts/MartianMono.ttf") format('ttf'), url("./fonts/MartianMono.woff") format('woff');
+  font-family: "Cinzel";
+  src: url("./fonts/Cinzel-Regular.otf") format('otf'), url("./fonts/Cinzel-Regular.woff") format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face{
-  font-family: "Orelega";
-  src: url("./fonts/OrelegaOne.ttf") format('ttf'), url("./fonts/OrelegaOne.woff") format('woff');
-  font-weight: 400;
+  font-family: "Cinzel";
+  src: url("./fonts/Cinzel-Bold.otf") format('otf'), url("./fonts/Cinzel-Bold.woff") format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Cinzel";
+  src: url("./fonts/Cinzel-Black.otf") format('otf'), url("./fonts/Cinzel-Black.woff") format('woff');
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -26,7 +33,9 @@ html {
 body {
   width: 100%;
   height: 100%;
+  font-family: "Cinzel";
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 a {
@@ -149,7 +158,7 @@ a,a:hover{
 }
 
 .burger-menu__link {
-  font-family: "Martian";
+  font-family: "Cinzel";
   text-decoration: none;
   font-size: 27px;
   letter-spacing: 0.1em;
@@ -177,7 +186,7 @@ a,a:hover{
 }
 .header__links {
   position: relative;
-  font-family: "Martian", monospace;
+  font-family: "Cinzel";
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -229,7 +238,7 @@ a,a:hover{
   }
 }
 .header__title {
-  font-family: "Orelega";
+  font-family: "Cinzel";
   font-size: 80px;
   line-height: 1.1em;
   color: rgb(153, 153, 153);
@@ -244,6 +253,11 @@ a,a:hover{
 @media screen and (max-width: 580px) {
   .header__title {
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 409px) {
+  .header__title {
+    font-size: 35px;
   }
 }
 .header__decorate {
@@ -379,7 +393,7 @@ a,a:hover{
   color: rgb(77, 94, 133);
   font-size: 48px;
   text-align: left;
-  font-family: "Orelega";
+  font-family: "Cinzel";
   font-weight: 400;
   margin-bottom: 60px;
   margin-left: auto;
@@ -453,12 +467,12 @@ a,a:hover{
 }
 .products__card-hover-text {
   color: #FFF;
-  font-family: "Martian";
+  font-family: "Cinzel";
   font-weight: 200;
   font-size: 30px;
 }
 .products__card-hover-button {
-  font-family: "Martian";
+  font-family: "Cinzel";
   background-color: transparent;
   padding: 10px 15px;
   border: 2px solid #fff;
@@ -486,7 +500,7 @@ a,a:hover{
   color: rgb(77, 94, 133);
   font-size: 30px;
   text-align: center;
-  font-family: "Orelega";
+  font-family: "Cinzel";
   font-weight: 400;
   margin-bottom: 60px;
   margin-left: auto;
@@ -528,13 +542,13 @@ a,a:hover{
 .swiper-slide__content-text {
   z-index: 1;
   color: #FFF;
-  font-family: "Martian";
+  font-family: "Cinzel";
   font-weight: 200;
   font-size: 20px;
 }
 .swiper-slide__content-button {
   z-index: 1;
-  font-family: "Martian";
+  font-family: "Cinzel";
   background-color: transparent;
   padding: 10px 15px;
   border: 2px solid #fff;
@@ -570,7 +584,7 @@ a,a:hover{
 }
 
 .contacts__title {
-  font-family: "Orelega";
+  font-family: "Cinzel";
   font-size: 32px;
   font-weight: 400;
   text-align: center;
@@ -578,7 +592,7 @@ a,a:hover{
   color: #070707;
 }
 .contacts__text {
-  font-family: "Martian";
+  font-family: "Cinzel";
   font-size: 16px;
   color: #070707;
   font-weight: 400;
@@ -593,7 +607,7 @@ a,a:hover{
   background-color: #070707;
   color: rgb(127, 176, 105);
   font-size: 14px;
-  font-family: "Martian";
+  font-family: "Cinzel";
   padding: 15px;
   border-radius: 8px;
   margin: 0 auto;
@@ -614,7 +628,7 @@ a,a:hover{
   transform: translateY(-3px);
 }
 .contacts__subtitle {
-  font-family: "Orelega";
+  font-family: "Cinzel";
   font-size: 32px;
   font-weight: 400;
   text-align: center;
@@ -640,4 +654,86 @@ a,a:hover{
 }
 .contacts__link-img_wb {
   width: 120px;
+}
+
+.price {
+  background-color: #fff;
+  padding: 100px 50px;
+  padding-top: 0;
+}
+@media screen and (max-width: 768px) {
+  .price {
+    padding: 50px 25px;
+    padding-top: 0;
+  }
+}
+
+.price__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 20px;
+}
+@media screen and (max-width: 900px) {
+  .price__content {
+    flex-direction: column;
+  }
+}
+.price__card {
+  padding: 20px;
+  background-color: #0D0D0D;
+  transition: transform .24s linear, background-color .24s linear, border-color .24s linear;
+  border: 2px solid #999;
+}
+@media screen and (max-width: 900px) {
+  .price__card {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .price__card {
+    width: 80%;
+  }
+}
+.price__card:hover {
+  transform: translateY(-15px);
+  background-color: #999;
+  border-color: #000;
+}
+.price__title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #FFF;
+  margin-bottom: 10px;
+  transition: color .24s linear;
+}
+@media screen and (max-width: 985px) {
+  .price__title {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .price__title {
+    font-size: 20px;
+  }
+}
+.price__subtitle {
+  font-size: 17px;
+  color: #FFF;
+  font-weight: 400;
+  transition: color .24s linear;
+}
+.price__img {
+  width: 100%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  object-position: center center;
+}
+.price__card:hover .price__title {
+  color: #000;
+}
+.price__card:hover .price__subtitle {
+  color: #000;
 }
