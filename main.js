@@ -44,12 +44,12 @@ burgerBtn.addEventListener('click', () => {
   }
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    slidesPerView: 'auto',
-    spaceBetween: '20',
-    speed: '500'
-  });
-})
+// document.addEventListener('DOMContentLoaded', () => {
+//   const swiper = new Swiper('.swiper', {
+//     // Optional parameters
+//     direction: 'horizontal',
+//     slidesPerView: 'auto',
+//     spaceBetween: '20',
+//     speed: '500'
+//   });
+// })
