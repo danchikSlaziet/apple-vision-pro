@@ -741,6 +741,7 @@ a,a:hover{
   font-weight: 400;
   transition: color .24s linear;
   text-decoration: line-through;
+  opacity: .7;
 }
 .price__img {
   width: 100%;
