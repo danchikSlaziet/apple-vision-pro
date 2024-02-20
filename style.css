@@ -755,3 +755,27 @@ a,a:hover{
 .price__card:hover .price__subtitle-new {
   color: #000;
 }
+
+.header__contacts {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .header__contacts {
+    display: flex !important;
+  }
+}
+.header__contacts img {
+  width: 30px;
+}
+.contacts__button_products {
+  margin-bottom: 60px;
+  width: 200px;
+  font-size: 28px;
+}
